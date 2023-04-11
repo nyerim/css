@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>layoutEx3</title>
+    <style>
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear:both;
+            height: 0;
+            visibility: hidden;
+        }
+        body {
+            text-align: center;
+            width: 900px;
+            margin: 0 auto;
+        }
+        .gnb{
+            background-color: rgb(96, 119, 221);
+            height: 50px;
+            line-height: 50px;
+            padding: 0 160px;
+        }
+        .gnb li a{
+            color: #fff;
+            display: block;
+        }
+        .gnb li{
+            width: 20%;
+        }
+        ul li {
+            list-style: none;
+            float: left;
+        }
+        .yellow{
+            background-color: gold;
+            height: 100px;
+            line-height: 95px;
+        }
+        .gnbb li{
+            font-weight: bold;
+            background-color: #ff1818;
+            width: 250px;  
+            height: 80px;
+            line-height: 70px;
+            margin: 0 20px 30px 0;  
+            float: left; 
+        }
+        
+        h2{
+            background-color: darkgreen;
+            height: 50px;
+            line-height: 1.7;
+            clear: both;
+        }
+        .gnb li:hover {
+            background-color: palevioletred; 
+            height: 60px;
+            line-height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <h1>로고</h1>
+<main>
+    <ul class="gnb">
+        <li><a href="#">홈</a></li>
+        <li><a href="#">상품</a></li>
+        <li><a href="#">소개</a></li>
+        <li><a href="#">서비스</a></li>
+        <li><a href="#">연락처</a></li>
+    </ul>
+
+    <h1 class="yellow">컨텐츠</h1>
+
+    <ul class="gnbb">
+        <li>1번째 열</li>
+        <li>2번째 열</li>
+        <li>3번째 열</li>
+    </ul>
+
+    <h2>copyright 2022</h2>
+</main>
+</body>
+</html>
