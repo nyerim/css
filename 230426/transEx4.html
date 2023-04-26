@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>transEx4</title>
+    <style>
+        /* 
+        input:focus 텍스트 필드에 포커스가 잡히면
+        input:checked 체크박스에 체크가 되면
+        input: disabled 비활성
+
+        input[type=checkbox]:checked { ~~ }
+        label 이용..?
+        */
+        .box1{
+            background-color: blueviolet; width: 30vw; padding: 20px;
+        }
+        .box2{
+            background-color: pink; width: 60vw; height: 300px;
+            transition: 0.6s;
+           
+        }
+        input[type=checkbox]:checked ~ .box2{
+            transform: translateY(-260px);
+        }
+    </style>
+</head>
+<body>
+    <h1>trans 연습 4</h1>
+    <input type="checkbox" name="check" id="check">
+    <label for="check"> 체크 박스가 체크되면 박스가 위로 올라와 사라집니다.</label>
+    <div class="box box1"><h2>:checked</h2>집에갈래 집에갈래 집에갈래 집에갈래
+        집에갈래 집에갈래 집에갈래 집에갈래 집에갈래 집에갈래 집에갈래 집에갈래
+        집에갈래 집에갈래 집에갈래 집에갈래 집에갈래 집에갈래 집에갈래 집에갈래
+        집에갈래 집에갈래 집에갈래 집에갈래 집에갈래 집에갈래 집에갈래 집에갈래
+    </div>
+    <div class="box box2">block</div>
+</body>
+</html>
+
