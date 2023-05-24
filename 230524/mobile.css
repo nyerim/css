@@ -1,0 +1,443 @@
+@charset "utf-8";
+
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Sans KR', sans-serif; 
+*/
+
+.flex {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-family: "Noto Sans KR", sans-serif;
+    text-align: center;
+  }
+
+  /* page1 */
+  .page1 {
+    background-color: rgb(255, 221, 226);
+  }
+  .page1-header {
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+  }
+  .page1-header .page1-header1 img {
+    width: 80px;
+    margin-left: 15px;
+  }
+  .page1-header .page1-header2 img {
+    width: 20px;
+    margin-right: 15px;
+  }
+
+  /* page1 - main */
+  .page1-main-1 {
+    padding-top: 30vw;
+  }
+  .page1-main-1 h2 {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    letter-spacing: 5px;
+  }
+  .page1-main-1 h3 {
+    color: rgba(0, 0, 0, 0.8);
+    font-family: "Montserrat", "Noto Sans KR", sans-serif;
+    font-weight: 200;
+    font-size: 55px;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    line-height: 13vw;
+  }
+  .page1-main-1 img {
+    width: 70px;
+    margin-top: 50px;
+  }
+
+  .page1-main-2 img {
+    width: 100%;
+  }
+  .page1-main-2 .number-bar {
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.5);
+    position: relative;
+  }
+  .page1-main-2 .number-bar p {
+    padding: 5px;
+  }
+  .page1-main-2 .number-bar p:nth-child(2) {
+    padding-right: 40px;
+    color: #000;
+  }
+  .page1-main-2 .number-bar p:nth-child(2)::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    right: 44%;
+    bottom: 40%;
+  }
+
+  /* page2 */
+  .page2 {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+  }
+  .page2 .box {
+    text-align: left;
+    color: #212529;
+    width: 400px;
+    border-bottom: 1px solid #bdbdbd;
+  }
+  .page2 .box:last-child {
+    border-bottom: none;
+  }
+
+  .page2 .box h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 20px;
+  }
+  .page2 .box p {
+    line-height: 30px;
+    color: #343638;
+    font-weight: 400;
+    margin-top: 20px;
+    font-size: 16px;
+    padding-bottom: 30px;
+  }
+
+  /* page3 */
+  .page3 {
+    flex-wrap: wrap;
+  }
+  .page3 .img-container img {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .page3 .img-container img:hover {
+    background: #fff;
+    z-index: 1;
+  }
+  .page3 .img-container img:hover p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .page3 .img-container p {
+    display: none;
+  }
+
+  /* page4 */
+  .page4-header {
+    font-family: "Montserrat", sans-serif;
+  }
+  .page4-header h3 {
+    color: #292929;
+    font-weight: bold;
+    font-size: 34px;
+    position: relative;
+    margin-top: 20px;
+  }
+  .page4-header h3::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #292929;
+    position: absolute;
+    right: 44%;
+    bottom: -50%;
+  }
+  .page4-header p {
+    line-height: 35px;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 80px;
+  }
+
+  /* page4-main */
+  .page4-main {
+    font-family: "Montserrat", sans-serif;
+  }
+  .page4-main img {
+    width: 85%;
+    margin-bottom: 15px;
+  }
+  .page4-main-box {
+    line-height: 30px;
+  }
+  .page4-main-box h5 {
+    font-weight: 600;
+    color: #35383a;
+  }
+  .page4-main-box p {
+    font-family: "Noto Sans KR", sans-serif;
+    color: #35383a;
+    margin-bottom: 40px;
+  }
+  .page4-main-box:last-child p {
+    margin-bottom: 90px;
+  }
+
+  /* page5 */
+  .page5 {
+    background-color: #eee;
+    padding: 40px;
+    margin: 30px;
+  }
+  .page5 h3 {
+    text-align: left;
+    color: #292929;
+    font-weight: bold;
+    font-size: 34px;
+    margin-bottom: 20px;
+  }
+  .page5 h5 {
+    text-align: left;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 300;
+    color: #4a4d50;
+    margin-bottom: 70px;
+  }
+  .page5 .youtube {
+    width: 100%;
+  }
+
+  /* page6 */
+  .page6 h3 {
+    color: #292929;
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    position: relative;
+  }
+
+  .page6 h3::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #292929;
+    position: absolute;
+    left: 45%;
+    bottom: -80%;
+  }
+
+  .service-box {
+    width: 90%;
+    box-shadow: 0 10px 10px #929292;
+    padding-bottom: 20px;
+    text-align: left;
+    margin-left: 28px;
+    margin-bottom: 120px;
+  }
+  .page6 img {
+    width: 85%;
+    margin-left: 35px;
+  }
+
+  .page6 h4 {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 35px;
+  }
+  .page6 p {
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 35px;
+  }
+
+  /* .circle {
+    text-indent: -9999px;
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: skyblue;
+  } */
+
+  /* footer */
+  .page7 {
+    background-color: #eee;
+    flex-wrap: wrap;
+    padding: 80px 0 80px 0;
+  }
+  .page7 img {
+    width: 100px;
+    margin-left: 50px;
+    vertical-align: middle;
+  }
+
+  /* page8 */
+  .page8 h3 {
+    color: #292929;
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .page8 h4{
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: bold;
+  }
+  .page8-btn {
+    justify-content: center;
+    font-size: 20px;
+    position: relative;
+  }
+  .page8-btn h4:last-child {
+    margin-left: 14%;
+  }
+  .page8-btn h4:first-child:before{
+    content: "";
+    display: block;
+    width:30vw; height: 4px;
+    background-color: #000;
+    position: absolute;
+    bottom: -20px; left: 19%;
+  }
+  .page8-btn h4:last-child:before{
+    content: "";
+    display: block;
+    width: 30vw; height: 2px;
+    background-color: #dadada;
+    position: absolute;
+    bottom: -20px; right: 19%;
+  }
+
+  /* 카카오 맵 자리 */
+
+  .page8 .address {
+    font-family: "Noto Sans KR", sans-serif;
+    text-align: left;
+    width: 85%;
+    margin: 50px auto;
+    margin-bottom: -30px;
+  }
+  .page8 .address .address{
+    border-bottom: 1px solid #e4e4e4;
+  }
+  .page8 .address .address:last-child{
+    border-bottom: 1px solid #000000;
+    margin-bottom: 120px;
+  }
+  .page8 .address h4{
+    font-weight: bold;
+  }
+  .page8 .address p{
+    margin-bottom: 20px;
+  }
+
+  /* page9 */
+  .page9{
+    background-image: linear-gradient(rgba(57, 110, 133, 0.8),rgba(72, 126, 150, 0.9)) , url(./mobile.images/img-bg.jpg);
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .page9 h1{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .page9 h4{
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    margin: 0 40px 40px 40px
+  }
+  .page9 p{
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 18px;
+    width: 50vw;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #fff;
+  }
+  .page9 p:hover{
+    background-color: #fff;
+    color: #000;
+    transition: 0.6s;
+  }
+
+  /* footer */
+  .footer{
+  background-color: #f8f8f8;
+  flex-wrap: wrap;
+  }
+  .footer img{
+    margin-top: 15%;
+    margin-bottom: 15%;
+    margin-left: -65%;
+  }
+  .footer .footer-wr{
+    flex-wrap: wrap;
+  }
+  .footer .footer-wr .footer-wrapper{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 50px;
+    margin-left: 10px;
+  }
+  .footer .footer-wr .footer-wrapper:last-child{
+    margin-bottom: 30%;
+  }
+  .footer .footer-wr .footer-wrapper h4{
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .footer .footer-wr .footer-wrapper svg{
+    width: 10px;
+    margin-right: 20px;
+  }
+  .footer .footer-wr .footer-wrapper svg:nth-child(3){
+    width: 13px;
+  }
+  .footer .footer-wr .footer-wrapper svg:nth-child(4){
+    width: 18px;
+  }
+  .footer .footer-wr .footer-wrapper svg:nth-child(5){
+    width: 14px;
+  }
+  .footer .footer-wr .footer-wrapper svg:nth-child(6){
+    width: 12px;
+  }
+
+  /* copyrights */
+  .copy{
+    background-color: #eee;
+    font-size: 14px;
+    font-family: "Noto Sans KR", sans-serif;
+    padding: 30px 0 30px 0;
+    line-height: 40px;
+  }
+  .copy span:first-child{
+    margin-right:10px
+  }
+  .copy span:last-child{
+    margin-left:10px
+  }
+
+  .copy span:hover{
+    text-decoration: underline;
+  }
+
+}
